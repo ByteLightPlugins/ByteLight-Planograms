@@ -1,0 +1,69 @@
+.body-div {
+  position: relative;
+  background-color: ${bg_color};
+  width: 768px;
+  height: 980px;
+}
+
+h1, h2, button {
+  color: ${text_color};
+}
+
+h1 {
+  font-size: 25px;
+  margin-top: 0px;
+  padding: 36px 0 20px 20px;
+}
+
+.carousel-controls-wrapper {
+  width: 100%;
+  height: 39px;
+}
+
+.carousel-controls-wrapper .m-carousel-controls {
+  background: gray;
+  width: 728px;
+  height: 39px;
+  margin: 0 auto;
+  opacity: .8;
+}
+
+.planogram-images {
+//  height: 490px;
+}
+
+div.image-div {
+  margin: 0 auto;
+  width: 728px;
+  height: 680px;
+  background-repeat: no-repeat !important;
+}
+
+div.image-div.image-1 {
+  background: url(${image_1});
+}
+
+div.image-div.image-2 {
+  background: url(${image_2});
+}
+
+div.image-div.image-3 {
+  background: url(${image_3});
+}
+
+h2 {
+  text-align: center;
+  margin-left: 20px;
+  font-size: 25px;
+  //font-size: 40px;
+}
+
+button {
+  width: 728px;
+  height: 50px;
+  margin-left: 13px;
+  background: ${button_color};
+  border: ${button_color};
+  color: ${button_text_color};
+  z-index: 2000;
+}
