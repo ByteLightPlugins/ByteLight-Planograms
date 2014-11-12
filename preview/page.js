@@ -4,7 +4,7 @@ var jsNamespace = BL.getJavascriptNamespace(APP.appId);
 
 $(jsNamespace + '.planogram-images').carousel()
 
-$('.next-button').on('click', function() {
+$(jsNamespace + '.next-button').on('click', function() {
   var currentImageId = imageCount;
   var nextImageId = imageCount + 1;
   
@@ -20,7 +20,7 @@ $('.next-button').on('click', function() {
   return false;
 })
 
-$('button').on('click', function() {
+$(jsNamespace + 'button').on('click', function() {
   BL_INTERNAL.sendEventToNative('CAPTURE_IMAGE', {})
   return false;
 })
@@ -29,7 +29,7 @@ BL_INTERNAL.listenForNative('IMAGE_CAPTURED', function() {
   var d = new Date();
   dateString = d.getMonth() + '/' + d.getDate() + '/' + d.getFullYear() + ' ' + 
   formatAMPM(d);
-  $('.verified-date').text(dateString);
+  $(jsNamespace + '.verified-date').text(dateString);
 })
 
 function formatAMPM(date) {
